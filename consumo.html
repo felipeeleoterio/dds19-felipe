@@ -1,0 +1,49 @@
+<html>
+    
+<head>
+        
+        <title>Consumo</title>>
+        
+        <script>
+          
+          
+        let kmi
+        let kmf
+        let gas
+        let autonomia
+
+        let distancia
+        
+        let totalLitros
+        let totalCusto
+
+        kmi = window.prompt("digite seu km inicial: ")
+        kmi = Number(kmi)
+        
+        kmf = window.prompt("digite seu km final: ")
+        kmf = Number(kmf)
+        
+        gas = window.prompt("digite o preco da gasolina: ")
+        gas = Number(gas)
+
+        autonomia = window.prompt("digite o preco da gasolina: ")
+        autonima = Number(autonomia)
+
+        distancia = kmi + kmf;
+        totalLitros = distancia/autonomia;
+
+        totalCusto = totalLitros * gas
+
+        console.log("A distancia percorrida foi de", distancia)
+        console.log("A quantidade de litros gastos foi", totalLitros,"O custo da viagem", totalCusto)
+            
+        
+        
+
+
+
+    </script>
+    
+</head>
+    
+    </html>

@@ -1,0 +1,40 @@
+<html>
+
+
+<head>
+    <title>media</title>
+     
+    <script>
+
+    let mediaNotas
+    let nota1,nota2,nota3,nota4
+    
+   nota1 = window.prompt("digite a primeira nota")
+   nota1 = Number(nota1)
+    
+   nota2 = window.prompt("digite a segunda nota:")
+   nota2 = Number(nota2)
+   
+   nota3 = window.prompt("digite a terceira nota:")
+   nota3 = Number(nota3)
+
+   nota4 = window.prompt("digite a quarta nota:")
+   nota4 = Number(nota4)
+
+   mediaNotas = (nota1 + nota2 + nota3 + nota4)/4; 
+   
+   if (mediaNotas < 5){
+       console.log("Voce esta reprovado!")
+      }else if(mediaNotas >= 5 && mediaNotas < 7){
+      console.log("Voce esta de recuperacao")
+      }else if(mediaNotas >= 7){
+      console.log("Voce esta aprovado")
+      }
+
+      console.log("sua media e : ",mediaNotas)
+    </script>
+</head>
+
+</html>
+
+
