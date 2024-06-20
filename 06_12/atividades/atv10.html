@@ -2,15 +2,34 @@
 
 <head>
 
-    <title>Array</title>
+    <title>Array MAIOReMENOR</title>
 
     <script>
+    
 
-    let num = []
-    for(c=0;c<5;c++){
-    num.push(prompt("Número: "))
+    var numeros = [];
+    for (var i = 0; i < 10; i++) {
+    var numero = parseInt(prompt("Digite um número inteiro:"));
+    numeros.push(numero);
+    }   
+
+    var maior = numeros[0];
+    var menor = numeros[0];
+    
+    for (var i = 1; i < numeros.length; i++) {
+    if (numeros[i] > maior) {
+        maior = numeros[i];
     }
-    console.log(num.reverse())
+        if (numeros[i] < menor) {
+        menor = numeros[i];
+        }
+    }
+
+
+    console.log("O maior número é: " + maior);
+    
+    console.log("O menor número é: " + menor);
+
     
         
     </script>
